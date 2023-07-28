@@ -21,7 +21,7 @@ mutation addUser($username: String!, $email: String!, $password: String!) {
         username
         email
         bookCount
-        saveBooks {
+        savedBooks {
           authors
           description
           title

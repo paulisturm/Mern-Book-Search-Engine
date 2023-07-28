@@ -38,7 +38,7 @@ const LoginForm = () => {
     }
 
     try {
-      const response = await await loginUser({
+      const response = await loginUser({
         variables: {...userFormData}
       });
 
@@ -50,7 +50,7 @@ const LoginForm = () => {
       console.log(user);
       Auth.login(token);
     } catch (err) {
-      console.error(err);
+      //console.error(err);
       setShowAlert(true);
     }
 
